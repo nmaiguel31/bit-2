@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte de Estudiantes</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Reporte de Estudiantes</h1>
+    <div id="resumen"></div>
+    <div id="filtros" style="margin-bottom: 1rem;">
+  <label for="orden">Ordenar por:</label>
+  <select id="orden">
+    <option value="nombre-asc">Nombre (A–Z)</option>
+    <option value="nombre-desc">Nombre (Z–A)</option>
+    <option value="promedio-desc">Promedio (Mayor a menor)</option>
+    <option value="promedio-asc">Promedio (Menor a mayor)</option>
+  </select>
+</div>
+    <table id="tabla-estudiantes">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>GitHub</th>
+          <th>Intensidad</th>
+          <th>bit-website</th>
+          <th>bit-1</th>
+          <th>Promedio</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
